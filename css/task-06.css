@@ -1,0 +1,59 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #2e2f42;
+  padding: 24px;
+}
+
+body > div {
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 32px;
+  height: 100%;
+  background-color: #f6f6fe;
+  display: flex;
+}
+
+#controls {
+  margin-bottom: 16px;
+  gap: 16px;
+  width: 486px;
+}
+
+#boxes {
+  gap: 30px;
+  min-width: 486px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-create] {
+  background-color: #4e75ff;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+}
