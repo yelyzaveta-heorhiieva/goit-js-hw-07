@@ -7,14 +7,16 @@ const input = document.querySelector("#controls input")
 
 function createBoxes(amount) {
     box.innerHTML = '';
+    let newBoxes = '';
     for (let i = 0; i < amount; i++) {
-        const newBox = document.createElement('div');
-        box.append(newBox);  
-        newBox.style.width = `${30 + i * 10}px`;
-        newBox.style.height = `${30 + i * 10}px`;
-        newBox.style.backgroundColor = getRandomHexColor();
+        const size = 30 + i * 10;
+        const color = getRandomHexColor();
+        newBoxes += `<div style="width: ${size}px; height: ${size}px; background-color: ${color};"></div>`;
     } 
+
+    box.insertAdjacentHTML('beforeend', newBoxes);
 }
+
 
 create.addEventListener('click', () => {
     const amount = input.value;
